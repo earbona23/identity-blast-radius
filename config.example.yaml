@@ -1,0 +1,6 @@
+# Copiá a config.yaml (gitignored). NUNCA subas secretos.
+# App Registration SOLO LECTURA: User.Read.All, GroupMember.Read.All,
+# Application.Read.All, RoleManagement.Read.Directory
+tenant_id: ""
+client_id: ""
+client_secret: ""     # mejor: exportá IBR_CLIENT_SECRET
