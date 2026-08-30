@@ -1,0 +1,39 @@
+# Roles y permisos de alto valor: lo que convierte "una cuenta cualquiera" en un
+# objetivo. EDITABLE a propósito — ajustá a tu organización.
+#
+# La pregunta que define el nivel: si un atacante llega a ESTO desde la cuenta
+# comprometida, ¿cuánto del tenant controla? Un rol o permiso no listado se trata como
+# 'normal' (no eleva el radio), pero SIEMPRE se muestra en el detalle.
+
+# ── Roles de directorio de Entra ID (por displayName; son roles integrados reales) ──
+roles:
+  Global Administrator: critico
+  Privileged Role Administrator: critico
+  Privileged Authentication Administrator: critico
+  Application Administrator: critico          # puede agregar credenciales a cualquier app
+  Cloud Application Administrator: critico
+  Hybrid Identity Administrator: critico
+  Partner Tier2 Support: critico
+  User Administrator: alto
+  Authentication Administrator: alto
+  Exchange Administrator: alto
+  SharePoint Administrator: alto
+  Intune Administrator: alto
+  Security Administrator: alto
+  Helpdesk Administrator: alto                # puede resetear contraseñas de muchos
+  Password Administrator: alto
+  Groups Administrator: medio
+  Directory Readers: bajo
+
+# ── Permisos de aplicación (Graph) que la cuenta HEREDA si posee una app con ellos ──
+# Poseer una app = poder agregarle credenciales = actuar como esa app con sus permisos.
+app_permissions:
+  Application.ReadWrite.All: critico
+  Directory.ReadWrite.All: critico
+  RoleManagement.ReadWrite.Directory: critico
+  Mail.ReadWrite: critico
+  Mail.Read: alto
+  Files.ReadWrite.All: alto
+  User.ReadWrite.All: alto
+  Directory.Read.All: medio
+  User.Read.All: medio
