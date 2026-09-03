@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: en-US
+tone_instructions: "Be concise and technical. This is security tooling: flag anything that could weaken a detection, widen blast radius, or leak data. Prefer correctness and clarity over nitpicks."
+reviews:
+  profile: chill
+  request_changes_workflow: false
+  high_level_summary: true
+  poem: false
+  review_status: true
+  auto_review:
+    enabled: true
+    drafts: false
+  path_filters:
+    - "!**/dist/**"
+    - "!**/*.min.js"
+    - "!**/*.lock"
+chat:
+  auto_reply: true
