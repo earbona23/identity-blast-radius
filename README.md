@@ -1,5 +1,15 @@
 # identity-blast-radius
 
+> **Snapshot, not maintained.** This tool works and its tests pass, but it is not under
+> active development: I am not adding features and I do not review pull requests on a
+> schedule. Issues are welcome and I do read them — a reply may take a while. Last
+> substantive change: September 2026.
+>
+> Maintained instead: [revtriage](https://github.com/earbona23/revtriage),
+> [entra-tripwire](https://github.com/earbona23/entra-tripwire),
+> [entraform](https://github.com/earbona23/entraform) and
+> [vantage](https://github.com/earbona23/vantage).
+
 Answers one question about one account: **if this person gets phished, what does the
 attacker reach?** It maps a single Entra ID identity's blast radius — roles held, roles
 one step away, permissions inherited from apps they own, groups they can alter — into a
