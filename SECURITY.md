@@ -5,6 +5,8 @@
 Open a [private security advisory](https://github.com/earbona23/identity-blast-radius/security/advisories/new)
 on this repository. Please do not open a public issue for a vulnerability.
 
+If you cannot use the advisory form, email **earbona@arrankago.com** instead.
+
 You will get an acknowledgement within 72 hours and an assessment within seven days. There
 is no bounty programme — this is a single-maintainer project — but every report is credited
 in the advisory unless you ask me not to.
